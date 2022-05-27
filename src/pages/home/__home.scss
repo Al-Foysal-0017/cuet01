@@ -1,0 +1,35 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.banner {
+  background-image: url("../../assets/images/bg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  max-width: 1600px;
+  margin: 0 auto;
+  clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  //   bottom: 0;
+  height: 800px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, transparent 100%);
+  max-width: 1600px;
+  margin: 0 auto;
+  //   z-index: 2;
+}

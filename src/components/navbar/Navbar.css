@@ -1,0 +1,60 @@
+.Navbar {
+  height: 80px;
+  /* background: orange; */
+  display: flex;
+  align-items: center;
+}
+.NavbarContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+.NavbarLeft {
+  cursor: pointer;
+  width: 25%;
+}
+.NavbarCenter {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.NavbarRight {
+  display: flex;
+  justify-content: flex-end;
+  width: 25%;
+}
+.NavbarMenuBtn {
+  cursor: pointer;
+}
+.NavLink {
+  text-decoration: none;
+  display: flex;
+  /* padding: 0 10px; */
+  cursor: pointer;
+}
+.activeClassName {
+  font-weight: bold;
+  color: aliceblue;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .NavbarCenter {
+    display: none;
+  }
+  .NavbarRight {
+    display: none;
+  }
+  .NavbarLeft {
+    width: 50%;
+  }
+}
+
+@media (min-width: 769px) {
+  .NavbarMenuBtn {
+    display: none;
+  }
+}
