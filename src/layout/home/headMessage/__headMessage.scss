@@ -1,0 +1,39 @@
+.headMessage {
+  display: flex;
+  //   border-left: 3px solid #000;
+
+  &__img {
+    height: 300px;
+    box-shadow: 4px 6px 16px -3px rgba(0, 0, 0, 0.78);
+    -webkit-box-shadow: 4px 6px 16px -3px rgba(0, 0, 0, 0.78);
+    -moz-box-shadow: 4px 6px 16px -3px rgba(0, 0, 0, 0.78);
+  }
+
+  &__msg {
+    padding-left: 4rem;
+    &__title {
+      padding-top: 4px;
+      display: inline-block;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 1.1;
+      font-family: MessinaSans, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    &__desc {
+      padding-top: 1rem;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.6;
+      font-family: MessinaSans, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    &__cuetVC {
+      padding-top: 8px;
+      font-size: 22px;
+      font-weight: 400;
+      font-family: MessinaSans, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+}

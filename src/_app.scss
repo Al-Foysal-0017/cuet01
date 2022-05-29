@@ -1,0 +1,61 @@
+.app__container {
+  display: flex;
+  min-height: 100vh;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+hr {
+  opacity: 0.3;
+}
+
+.shadow-inner {
+  box-shadow: inset 0 0.3rem 3rem rgba(243, 240, 240, 0.1);
+}
+
+.logo-color {
+  color: #b2b2b2;
+}
+
+.animate-bounce {
+  animation: bounceY 3s infinite;
+}
+
+@keyframes bounceY {
+  0%,
+  100% {
+    transform: translateX(1%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-bounce-X {
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(-1%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}

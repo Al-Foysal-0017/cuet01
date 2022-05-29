@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import Container from "../container/Container";
 // import Container from "../container/Container"
 import "./Navbar.css";
 
@@ -10,16 +11,17 @@ export const navRoutes = [
   { name: "Profile", route: "/profile" },
 ];
 export const navRoutesRightSection = [
-  { name: "Wallet", route: "/wallet" },
-  { name: "Photo", route: "/photo" },
+  { name: "Sign in", route: "/login" },
+  { name: "Sign up", route: "/register" },
 ];
 
 const NavbarTop = ({ showDropdown, setShowDropdown }) => {
+  const { pathname } = useLocation();
   return (
     <div style={{ background: "", color: "#fff" }}>
       {/* If it has 3 sections */}
       {/* <Container className="Navbar"> */}
-      <div className="Navbar">
+      <Container className="Navbar">
         <ul className="NavbarContainer">
           {/* Left Section */}
           <div className="NavbarLeft">
@@ -27,9 +29,13 @@ const NavbarTop = ({ showDropdown, setShowDropdown }) => {
               <img
                 src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/CUET_Vector_ogo.svg/1200px-CUET_Vector_ogo.svg.png"
                 alt=""
-                width={120}
-                height={150}
-                style={{ position: "absolute", top: "0", left: "0" }}
+                width={100}
+                height={130}
+                style={{
+                  position: "absolute",
+                  marginTop: "-28px",
+                  marginLeft: "-48px",
+                }}
               />
             </Link>
           </div>
@@ -37,13 +43,21 @@ const NavbarTop = ({ showDropdown, setShowDropdown }) => {
           <div className="NavbarCenter">
             {navRoutes.map((item) => (
               <li key={item.name} className="NavLink">
-                <NavLink
-                  activeClassName="activeClassName"
-                  exact
+                <Link
+                  style={{
+                    borderBottom:
+                      (pathname === "/" && item.name === "Home") ||
+                      (pathname === "/about" && item.name === "About Us") ||
+                      (pathname === "/contact" && item.name === "Contact") ||
+                      (pathname === "/profile" && item.name === "Profile")
+                        ? "3px solid green"
+                        : "",
+                  }}
+                  className="NavLinkName"
                   to={item.route}
                 >
                   {item.name}
-                </NavLink>
+                </Link>
               </li>
             ))}
           </div>
@@ -51,13 +65,9 @@ const NavbarTop = ({ showDropdown, setShowDropdown }) => {
           <div className="NavbarRight">
             {navRoutesRightSection.map((item) => (
               <li key={item.name} className="NavLink">
-                <NavLink
-                  activeClassName="activeClassName"
-                  exact
-                  to={item.route}
-                >
+                <Link className="NavLinkName" to={item.route}>
                   {item.name}
-                </NavLink>
+                </Link>
               </li>
             ))}
           </div>
@@ -70,7 +80,7 @@ const NavbarTop = ({ showDropdown, setShowDropdown }) => {
             MENU
           </div>
         </ul>
-      </div>
+      </Container>
 
       {/* --------------------------------------------------------------- */}
       {/* If it has 2 sections start*/}

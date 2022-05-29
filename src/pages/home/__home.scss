@@ -2,7 +2,8 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 .banner {
-  background-image: url("../../assets/images/bg1.jpg");
+  // background-image: url("../../assets/images/bguu1.jpg");
+  background-image: url("../../assets/images/hero1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,7 +13,8 @@
   color: white;
   max-width: 1600px;
   margin: 0 auto;
-  clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+  // width: 100%;
+  // clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
 }
 
 .banner::before {
@@ -26,10 +28,171 @@
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.6) 0%,
-      rgba(0, 0, 0, 0.2) 100%
+      rgba(0, 0, 0, 0.4) 100%
     ),
-    linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, transparent 100%);
+    linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
   max-width: 1600px;
   margin: 0 auto;
   //   z-index: 2;
+}
+
+.text {
+  position: absolute;
+  /* top: 200px; */
+  /* margin-top: 80px; */
+  /* left: 100px; */
+  top: 120px;
+  /* border: 5px solid red; */
+  width: fit-content;
+  transform: rotate(-90deg);
+  /* font-family: "Poppins"; */
+}
+
+.text h1 {
+  font-size: 120px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: -10px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+  width: 600px;
+  color: #fff;
+  font-family: "Poppins";
+
+  /* border: 3px solid #000; */
+}
+/* .text h1 .hidetext {
+  position: absolute;
+} */
+
+.text h2 {
+  position: absolute;
+  top: 40px;
+  left: -80px;
+  /* color: #efde74; */
+  color: #c9b42a9c;
+  z-index: -1;
+  font-size: 150px;
+  font-weight: 600;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-family: "Poppins";
+}
+
+.text h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  height: 80px;
+}
+/* .text h3 .hidetext {
+  position: absolute;
+} */
+
+.text p {
+  width: 200px;
+  font-size: 12px;
+  margin-top: 30px;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  height: 110px;
+}
+
+.hero-img-container {
+  // background: red;
+  position: absolute;
+  width: 100%;
+  max-width: 1600px;
+}
+
+.hero-img1 {
+  position: absolute;
+  top: 180px;
+  right: 50px;
+  // left: 1450px;
+  // border: 1px solid green;
+  box-shadow: -5px 0px 23px 10px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: -5px 0px 23px 10px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -5px 0px 23px 10px rgba(0, 0, 0, 1);
+}
+
+.hero-img1 img {
+  width: 300px;
+  height: 200px;
+}
+
+.hero-img2 {
+  position: absolute;
+  top: 410px;
+  right: 50px;
+  // left: 1450px;
+  // border: 5px solid red;
+  box-shadow: -5px 0px 23px 10px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: -5px 0px 23px 10px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -5px 0px 23px 10px rgba(0, 0, 0, 1);
+}
+
+.hero-img2 img {
+  width: 350px;
+  height: 300px;
+}
+
+.hero-img3 {
+  position: absolute;
+  top: 280px;
+  right: 430px;
+  // left: 1200px;
+  // border: 1px solid green;
+
+  box-shadow: -5px 0px 23px 10px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: -5px 0px 23px 10px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -5px 0px 23px 10px rgba(0, 0, 0, 1);
+}
+
+.hero-img3 img {
+  width: 300px;
+  height: 380px;
+}
+
+.animate-container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.animate-img-header {
+  // // text-align: center;
+  // display: flex;
+  // align-items: flex-end;
+  // border-radius: 50% 50% 0 0;
+  // justify-content: center;
+  // background: #fff;
+  // height: 50px;
+  // // margin-top: -80px;
+  // z-index: 9999999999999;
+  // // position: absolute;
+  // width: 100%;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
+  font-size: 40px;
+  // border-top-left-radius: 50%;
+  // border-top-right-radius: 50%;
+
+  // height: 24px;
+  // border-radius: 24% 24% 0 0;
+  // background: #fff;
+  // margin-top: -50px;
+  // // margin-bottom: 9rem;
+  // z-index: 999999;
+  // position: absolute;
+  // max-width: 1600px;
+  // width: 100%;
 }

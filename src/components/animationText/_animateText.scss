@@ -1,0 +1,75 @@
+@import "../../base";
+
+.animateImgHome {
+  height: 80px;
+  width: 120px;
+  margin: 0 12px;
+}
+
+.marginAnimateHero {
+  margin-top: 1.5rem;
+}
+
+.marginAnimateHero-item {
+  // border: 1px solid #000;
+  // box-shadow: -5px -4px 13px -3px rgba(0, 0, 0, 0.51);
+  // -webkit-box-shadow: -5px -4px 13px -3px rgba(0, 0, 0, 0.51);
+  // -moz-box-shadow: -5px -4px 13px -3px rgba(0, 0, 0, 0.51);
+  margin: 0 4px;
+}
+
+.animateSecondImg {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.animateSecondName {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 4px;
+  // margin-top: -48px;
+  // color: #fff;
+}
+
+.animateSecondJob {
+  font-size: 10px;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 8px;
+  // color: #fff;
+}
+
+@media screen and (max-width: $laptop) {
+  .animateTextHome {
+    height: 58px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .animateTextHome {
+    height: 44px;
+  }
+  .marginAnimateHero {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .animateTextHome {
+    height: 34px;
+  }
+  .marginAnimateHero {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .animateTextHome {
+    height: 24px;
+  }
+  .marginAnimateHero {
+    margin-top: 0.5rem;
+  }
+}

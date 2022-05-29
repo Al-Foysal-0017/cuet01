@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import Container from '../container/Container';
 import "./Dropdown.css";
 import { navRoutes } from "./NavbarTop";
@@ -29,25 +29,13 @@ const DropDown = ({ showDropdown, setShowDropdown }) => {
           <div className="DropdownLinks">
             {navRoutes.map((item) => (
               <li key={item.name} className="DropdownLink">
-                <NavLink
-                  activeClassName="activeClassName"
-                  exact
-                  to={item.route}
-                >
-                  {item.name}
-                </NavLink>
+                <Link to={item.route}>{item.name}</Link>
               </li>
             ))}
             {/* If there is also have the links of Navbar Right Section */}
             {navRoutesRightSection.map((item) => (
               <li key={item.name} className="DropdownLink">
-                <NavLink
-                  activeClassName="activeClassName"
-                  exact
-                  to={item.route}
-                >
-                  {item.name}
-                </NavLink>
+                <Link to={item.route}>{item.name}</Link>
               </li>
             ))}
           </div>
