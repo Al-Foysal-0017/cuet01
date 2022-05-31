@@ -18,7 +18,7 @@ export const navRoutesRightSection = [
 const NavbarTop = ({ showDropdown, setShowDropdown }) => {
   const { pathname } = useLocation();
   return (
-    <div style={{ background: "", color: "#fff" }}>
+    <div>
       {/* If it has 3 sections */}
       {/* <Container className="Navbar"> */}
       <Container className="Navbar">
@@ -27,16 +27,18 @@ const NavbarTop = ({ showDropdown, setShowDropdown }) => {
           <div className="NavbarLeft">
             <Link to="/">
               <img
+                // src="https://i1.sndcdn.com/artworks-000009967543-wpthe9-t500x500.jpg"
                 src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/CUET_Vector_ogo.svg/1200px-CUET_Vector_ogo.svg.png"
                 alt=""
-                width={100}
-                height={130}
+                width={120}
+                height={150}
                 style={{
                   position: "absolute",
                   marginTop: "-28px",
                   marginLeft: "-48px",
                 }}
               />
+              {/* CUET */}
             </Link>
           </div>
           {/* Center Section */}

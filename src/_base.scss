@@ -52,6 +52,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: $text-color-gray;
+  // background-color: $text-color-gray;
+  background-color: #05be71;
   border-radius: 10px;
 }

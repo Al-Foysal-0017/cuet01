@@ -1,8 +1,10 @@
 .headMessage {
   display: flex;
-  //   border-left: 3px solid #000;
+  border-left: 1px solid #bababa;
+  padding-bottom: 6rem;
 
   &__img {
+    //  padding-left: 4rem;
     height: 300px;
     box-shadow: 4px 6px 16px -3px rgba(0, 0, 0, 0.78);
     -webkit-box-shadow: 4px 6px 16px -3px rgba(0, 0, 0, 0.78);
