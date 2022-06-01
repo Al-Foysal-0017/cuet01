@@ -1,7 +1,8 @@
-// import img1 from "../../../images/svg-2.svg";
 import img1 from "../../../assets/images/cuetVC.jpeg";
-import img2 from "../../../images/logIn.svg";
-import img3 from "../../../images/create.svg";
+// import img2 from "../../../images/calendar.svg";
+// import img3 from "../../../images/create.svg";
+import img2 from "../../../assets/images/TSC.JPG";
+import img3 from "../../../assets/images/tree.JPG";
 
 export const homeObjOne = {
   id: "about",

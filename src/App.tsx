@@ -15,6 +15,7 @@ import Login from "./pages/signin";
 import About from "./pages/about";
 import Footer from "./components/footer";
 import Navbar from "./Navbar";
+import ScrollToTop from "./components/scrollTop/ScrollToTop";
 
 export default () => {
   // const [showDropdown, setShowDropdown] = useState(false);
@@ -24,6 +25,7 @@ export default () => {
       {/* <div style={{ position: "absolute", width: "100%", zIndex: "9999999" }}>
         <NavbarMain />
       </div> */}
+      <ScrollToTop />
       <Routes>
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />

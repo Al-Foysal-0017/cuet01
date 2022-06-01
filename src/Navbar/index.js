@@ -68,7 +68,8 @@ const Navbar = ({ toggle = false }) => {
               <div
                 style={{ color: "#fff", fontWeight: "600", marginLeft: "8px" }}
               >
-                Chittagong University of <br /> Engineering & Technology
+                CUET | ALUMNI
+                {/* Chittagong University of <br /> Engineering & Technology */}
               </div>
             </Link>
             <MobileIcon onClick={toggle}>

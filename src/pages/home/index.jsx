@@ -4,10 +4,10 @@ import BannerExample from "../../components/carousel";
 import Slider from "../../components/slider";
 import ThreeD from "../../components/threeD";
 import "./__home.scss";
-import Bg1 from "../../assets/images/bg1.jpg";
+import Bg1 from "../../assets/images/TasniaApu.JPG";
 // import Bg1 from "../../assets/images/hero1.jpg";
 import GraduateImg from "../../assets/images/graduation.png";
-import Bg2 from "../../assets/images/bg2.jpg";
+import Bg2 from "../../assets/images/TSC.JPG";
 import Bg3 from "../../assets/images/bg3.jpg";
 import AnimationText from "../../components/animationText/AnimationText";
 import Container from "../../components/container/Container";
@@ -73,21 +73,21 @@ const Home = () => {
                 // style={{ border: "4px solid green" }}
                 width={300}
                 height={200}
-                src={Bg3}
+                src={Bg1}
                 alt=""
               />
             </div>
             <div className="hero-img2">
               <img
                 // width={350} height={300}
-                src={Bg3}
+                src={Bg1}
                 alt=""
               />
             </div>
             <div className="hero-img3">
               <img
                 // width={300} height={380}
-                src={Bg3}
+                src={Bg1}
                 alt=""
                 className="img03"
               />
